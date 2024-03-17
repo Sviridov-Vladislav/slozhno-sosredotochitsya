@@ -2,4 +2,207 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  inline-size: 1024px;
+  block-size: 100%;
+  background: #fff1f7 center / cover;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 768px;
+  margin-bottom: 60px;
+}
+
+.header::after {
+  content: " ";
+  display: block;
+  position: relative;
+  border-bottom: 1px solid var(--color);
+  border-left: 1px solid var(--color);
+  width: 25px;
+  height: 25px;
+  left: 20px;
+  bottom: -89px;
+}
+
+.decorated-zone {
+  background: url(../images/cover-image-light.png) center / cover;
+}
+
+.header__theme-menu {
+  padding-top: 20px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__theme-menu-list::after {
+  content: " ";
+  display: block;
+  position: relative;
+  border-right: 1px solid var(--color);
+  border-top: 1px solid var(--color);
+  width: 25px;
+  height: 25px;
+  top: 0;
+  right: -352px;
+}
+
+.header__theme-menu-button  {
+  min-width: 70px;
+  min-height: 26px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--color);
+  text-transform: lowercase;
+}
+
+.header__decoration {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 48px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
+  color: var(--accent-color);
+  
+}
+
+.header__decoration::after {
+  content: " ";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  margin-left: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.header__heading {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 83%;
+  color: #ffc2e6;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  padding-top: 273px;
+}
+
+.header__title {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 114px;
+  padding-right: 20px;
+}
+
+.header__title-item {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;   
+}
+
+.title-decor {
+  background: #ff8dcb;
+  color: var(--color);
+}
+
+.main {
+  width: 100%;
+  min-height: 3352px;
+  display: grid;
+  grid-template-rows: 508px 498px 1015px 1091px;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  row-gap: 80px;
+}
+
+.hard-concentrate {
+  width: 100%;
+  min-height: 508px;
+  display: grid;
+  grid-template-columns: auto 648px;
+  grid-template-rows: auto 244px;
+  padding: 0px 20px;
+  row-gap: 20px;
+}
+
+.hard-concentrate__heading {
+  grid-row: 2 span;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--color);
+}
+
+.hard-concentrate__description {
+  min-height: 244px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--color);
+}
+
+.text-shadow {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color);
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #ff8dcb;
+}
+
+.reduced-concentration {
+  width: 100%;
+  min-height: 498px;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 315px);
+  grid-template-rows: 47px 431px;
+  gap: 20px;
+}
+
+.reduced-concentration__heading {
+  grid-column: span 3;
 }
