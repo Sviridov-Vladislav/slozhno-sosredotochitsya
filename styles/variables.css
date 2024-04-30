@@ -3,8 +3,10 @@
   и их переопределение под различные устройства
 */
 :root {
-  --font-family: "IBM Plex Mono", Arial, sans-serif;
+  --font-family: "IBM Plex Mono", Helvetica, Arial, sans-serif;
   --accent-color: #ff0070;
+  --header-color: #ffc2e6;
   --title-color: #ff8dcb;
   --color: #353430;
 }
+
