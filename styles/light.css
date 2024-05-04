@@ -173,6 +173,18 @@
   white-space: nowrap;
 }
 
+@media (prefers-color-scheme: light) {
+  .theme_auto .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    inline-size: 1px;
+    block-size: 1px;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
 .theme_light .header__heading {
   display: flex;
   justify-content: flex-start;
@@ -631,3 +643,4 @@
     text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
   }
 } 
+
