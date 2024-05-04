@@ -197,7 +197,7 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
-  line-height: 130%; 
+  line-height: 130%;
 }
 
 .theme_light .title-decor {
@@ -435,7 +435,7 @@
     --accent-color: #ff0070;
  }
 
-  .page.theme_light{
+  .page.theme_light {
     inline-size: 768px;
     block-size: 100%;
   }

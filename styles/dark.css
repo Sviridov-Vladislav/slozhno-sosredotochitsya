@@ -48,7 +48,7 @@
   border-right: 1px solid var(--accent-color, #ff0070);
 }
 
-.theme_dark .header::after  {
+.theme_dark .header::after {
   content: " ";
   position: absolute;
   bottom: 20px;
@@ -59,7 +59,7 @@
   border-left: 1px solid var(--accent-color, #ff0070);
 }
 
-.theme_dark .decorated-zone  {
+.theme_dark .decorated-zone {
   background: url(../images/cover-image-dark.png) center / cover;
 }
 
@@ -187,7 +187,7 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
-  line-height: 130%; 
+  line-height: 130%;
 }
 
 .theme_dark .title-decor {
