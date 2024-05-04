@@ -500,7 +500,7 @@
   }
 }
 
-@media (375px <= width < 768px) {
+@media (1px <= width < 768px) {
   :root {
     --accent-color: #ff8dcb;
  }
