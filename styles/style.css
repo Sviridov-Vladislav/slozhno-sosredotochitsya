@@ -129,6 +129,7 @@
   position: absolute;
   top: 20px;
   right: 29px;
+  visibility: var(--visibility);
   display: flex;
   align-items: center;
   color: var(--accent-color, #ff0070);
@@ -136,8 +137,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 139%;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .header__decoration::after {
@@ -150,16 +151,6 @@
   background-color: var(--accent-color, #ff0070);
 }
 
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  inline-size: 1px;
-  block-size: 1px;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
 .header__heading {
   display: flex;
   justify-content: flex-start;
@@ -170,6 +161,16 @@
   font-size: var(--logo-size);
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+}
+
+.theme_auto:has(light) .visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .header__title {
@@ -213,8 +214,8 @@
 }
 
 .heading {
-  max-width: 315px;
   grid-row: 2 span;
+  max-width: 315px;
   color: var(--title-color, #353430);
   font-family: var(--font-family);
   font-weight: 700;
@@ -307,7 +308,7 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 315px);
-  gap: 20px;
+  gap: 18px;
 }
 
 .img__item {
@@ -371,7 +372,7 @@
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
-@media (width <= 768px) {
+@media (width < 769px) {
   :root {
     --accent-color: #ff8dcb;
  }
@@ -434,6 +435,10 @@
     grid-template-columns: 1fr 472px;
   }
   
+  .pictures {
+    max-height: 823px;
+  }
+
   .gallery {
     grid-template-columns: repeat(3, 230px);
   }
@@ -447,7 +452,7 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width < 376px) {
   :root {
     --accent-color: #ff8dcb;
  }
@@ -461,12 +466,12 @@
     margin-bottom: 40px;
   }
 
-  .header::before {
+  .decorated-zone::before {
     top: 10px;
     right: 10px;
   }
   
-  .header::after {
+  .decorated-zone::after {
     bottom: 10px;
     left: 10px;
   }
@@ -511,17 +516,20 @@
   .reduced-concentration {
     display: flex;
     flex-direction: column;
+    max-height: 1119px;
     padding: 0 10px;
   }
 
   .recommendations {
     display: flex;
     flex-direction: column;
+    max-height: 1736px;
     padding: 0 10px;
   }
 
   .pictures {
     gap: 10px;
+    max-height: 1400px;
     padding: 0 10px;
   }
 

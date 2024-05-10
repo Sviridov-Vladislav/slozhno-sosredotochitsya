@@ -19,7 +19,8 @@
   --button-auto_focus: #ff0070;
   --button-light_hover: rgba(255, 0, 112, 0.4);
   --button-dark_hover: none;
-}
+  --visibility: visible;
+ }
 
  .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -102,6 +103,10 @@
   border-bottom: 1px solid var(--button-light);
 } 
 
+.header__decoration {
+  visibility: var(--visibility);
+}
+
 .header__heading {
   color: var(--header-color, #db00ff);
 }
@@ -132,13 +137,13 @@
   color: var(--header-color, #db00ff);
 }
 
-@media (width <= 768px) {
+@media (width < 769px) {
   .page.theme_dark {
     inline-size: 768px;
     }
 }
   
-  @media (width <= 375px) {
+  @media (width < 376px) {
   .page.theme_dark {
     inline-size: 375px;
     }
@@ -160,6 +165,7 @@
     --button-auto_focus: #ff0070;
     --button-light_hover: rgba(255, 0, 112, 0.4);
     --button-dark_hover: none;
+    --visibility: visible;
   }
 
   .page {

@@ -21,6 +21,7 @@
   --button-auto_focus: #353430;
   --button-light_hover: none;
   --button-dark_hover: rgba(50, 49, 45, 0.4);
+  --visibility: hidden;
 }
 
 .page.theme_light {
@@ -34,13 +35,13 @@
   block-size: 100%;
 } 
 
-@media (width <= 768px) {
+@media (width < 769px) {
   .page.theme_light  {
     inline-size: 768px;
     }
 }
   
-  @media (width <= 375px) {
+  @media (width < 376px) {
   .page.theme_light  {
     inline-size: 375px;
     }
