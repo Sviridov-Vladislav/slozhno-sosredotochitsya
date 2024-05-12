@@ -4,24 +4,20 @@
   переключая тему
 */
 
-
 :root .theme_light {
   --font-family: "IBM Plex Mono", Monospace, Arial, sans-serif;
   --accent-color: #ff0070;
   --header-color: #ffc2e6;
   --title-color:#353430;
   --title-bg: #ff8dcb;
-  --button-color: #353430;
-  --button-light: #353430;
-  --button-dark: none;
+  --title_text-color: #353430;
   --color: #353430;
   --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --mobile-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --button-auto_hover: rgba(50, 49, 45, 0.4);
-  --button-auto_focus: #353430;
-  --button-light_hover: none;
-  --button-dark_hover: rgba(50, 49, 45, 0.4);
+  --mobile-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);  
   --visibility: hidden;
+  --button-color: #353430;
+  --button-hover: rgba(50, 49, 45, 0.4);
+  --button-fv: #353430;
 }
 
 .page.theme_light {
@@ -29,20 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../images/cover-image-light.png) center / cover;
+  background: url(../images/cover-image-light.png) no-repeat center / cover;
   background-attachment: fixed;
-  inline-size: 1024px;
-  block-size: 100%;
 } 
 
-@media (width < 769px) {
-  .page.theme_light  {
-    inline-size: 768px;
-    }
-}
-  
-  @media (width < 376px) {
-  .page.theme_light  {
-    inline-size: 375px;
-    }
-}
