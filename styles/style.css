@@ -8,7 +8,7 @@
   align-items: center;
   width: 100%;
   max-width: 1024px;
-  background: url(../images/cover-image-light.png) no-repeat center / cover;
+  background: var(--background);
   background-attachment: fixed;
   block-size: 100%;
 }
@@ -401,6 +401,29 @@
     text-shadow: 2px 2px 0 var(--shadow-color, #ff8dcb);
   }
 }
+
+@media (width < 500px) {
+  .hard-concentrate {
+    padding: 0;
+  }
+
+  .heading {
+    width: auto;
+  }
+
+  .reduced-concentration {
+    padding: 0;
+  }
+
+  .recommendations {
+    padding: 0;
+  }
+
+  .pictures {
+    padding: 0;
+  }
+}
+
 
 @media (width < 376px) {
   .page {

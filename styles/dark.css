@@ -16,6 +16,7 @@
   --button-color: #ff0070;
   --button-hover: rgba(255, 0, 112, 0.4);
   --button-fv: #ff0070;
+  --background: url(../images/cover-image-dark.png) no-repeat center / cover;
  }
 
  .page.theme_dark {
@@ -23,13 +24,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url(../images/cover-image-dark.png) no-repeat center / cover;
-  background-attachment: fixed;
-}
+  }
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -44,6 +39,7 @@
     --button-color: #ff0070;
     --button-hover: rgba(255, 0, 112, 0.4);
     --button-fv: #ff0070;
+    --background: url(../images/cover-image-dark.png) no-repeat center / cover;
   }
 } 
 
