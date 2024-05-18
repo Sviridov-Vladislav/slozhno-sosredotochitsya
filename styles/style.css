@@ -402,30 +402,7 @@
   }
 }
 
-@media (width < 500px) {
-  .hard-concentrate {
-    padding: 0;
-  }
-
-  .heading {
-    width: auto;
-  }
-
-  .reduced-concentration {
-    padding: 0;
-  }
-
-  .recommendations {
-    padding: 0;
-  }
-
-  .pictures {
-    padding: 0;
-  }
-}
-
-
-@media (width < 376px) {
+@media (width < 420px) {
   .page {
     width: 100%;
     max-width: 375px;
